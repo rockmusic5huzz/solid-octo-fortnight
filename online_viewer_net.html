@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus Studios</title>
+
+<style>
+
+:root{
+    --bg:#004f86;
+    --bg-dark:#002d4d;
+    --gold-1:#fff4c7;
+    --gold-2:#e2c15c;
+    --gold-3:#b88700;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    radial-gradient(
+        circle at center,
+        #0b6fb7 0%,
+        var(--bg) 35%,
+        var(--bg-dark) 100%
+    );
+
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    overflow:hidden;
+}
+
+.container{
+    width:min(95%,1200px);
+    text-align:center;
+}
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+
+    flex-wrap:nowrap;
+}
+
+.nexus{
+
+    font-size:clamp(2rem,8vw,7rem);
+
+    font-weight:900;
+
+    letter-spacing:-0.06em;
+
+    color:#004f86;
+
+    padding:
+    0.15em
+    0.35em;
+
+    background:
+    linear-gradient(
+    180deg,
+    var(--gold-1),
+    var(--gold-2),
+    var(--gold-3)
+    );
+
+    border:3px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    inset 0 2px 0 rgba(255,255,255,.6),
+    inset 0 -6px 8px rgba(0,0,0,.25);
+}
+
+.right{
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+}
+
+.line{
+    height:4px;
+
+    background:
+    linear-gradient(
+    90deg,
+    var(--gold-1),
+    var(--gold-2),
+    var(--gold-3)
+    );
+}
+
+.studios{
+
+    font-size:clamp(2rem,8vw,7rem);
+
+    font-weight:900;
+
+    letter-spacing:-0.06em;
+
+    padding:0.08em 0;
+
+    background:
+    linear-gradient(
+    180deg,
+    var(--gold-1),
+    var(--gold-2),
+    var(--gold-3)
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* TEXT */
+
+.tagline{
+    margin-top:45px;
+
+    color:white;
+
+    font-size:
+    clamp(
+    1.1rem,
+    2vw,
+    2rem
+    );
+
+    font-weight:700;
+}
+
+.desc{
+
+    margin-top:18px;
+
+    color:
+    rgba(
+    255,
+    255,
+    255,
+    .85
+    );
+
+    line-height:1.8;
+
+    max-width:600px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.notice{
+
+    margin-top:40px;
+
+    display:inline-block;
+
+    padding:
+    14px
+    24px;
+
+    border:
+    1px solid
+    rgba(
+    255,
+    255,
+    255,
+    .15
+    );
+
+    color:white;
+
+    letter-spacing:2px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    backdrop-filter:blur(10px);
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .logo{
+        gap:6px;
+    }
+
+    .line{
+        height:2px;
+    }
+
+    .tagline{
+        margin-top:30px;
+    }
+
+    .desc{
+        font-size:.95rem;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">
+
+        <div class="nexus">
+            NEXUS
+        </div>
+
+        <div class="right">
+
+            <div class="line"></div>
+
+            <div class="studios">
+                STUDIOS
+            </div>
+
+            <div class="line"></div>
+
+        </div>
+
+    </div>
+
+    <div class="tagline">
+        India's Next Comic Universe
+    </div>
+
+    <div class="desc">
+        Heroes will rise. Legends will fall.
+        The Nexus Store is currently under construction.
+    </div>
+
+    <div class="notice">
+        COMING SOON
+    </div>
+
+</div>
+
+</body>
+</html>
